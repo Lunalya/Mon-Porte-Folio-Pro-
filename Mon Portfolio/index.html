@@ -11,20 +11,19 @@
 
 
 <header>
-  <div class="navbar">
-<nav>
-<img src="cat.png" alt="logo" width="100" height="50">
-  <a href="#me">About me</a>
-  <a href="#contacts">Contact</a>
-  <a href="#projet">Projets</a>
+<nav class="fill">
+  <ul>
+  <li><a href="#me">About me</a></li>
+  <li><a href="#contacts">Contact</a></li>
+  <li><a href="#projet">Projets</a></li>
+</ul>
 </nav>
-
-</div>
 
 </header>
 
-<section class="quote">
-  <p>
+<section class="citation">
+  <img class="ghibli" src="Assets/Img/hauru.gif" alt="Hauru" >
+  <p class="quote">
     "Je n'étais qu'une petite fille avec un grand rêve,
     un rappel que vous ne devez jamais abandonner.
     Tellement de personnes m'ont dit que je n'y arriverai
@@ -33,11 +32,32 @@
   </p>
 </section>
 
-<img class="separation" src="" alt="" width="700" height="100">
+<div class="trie">
+
+  <h1 class="titrefooter"> Mes projets </h1>
+
+  <label class="dropdown">
+
+    <div class="dd-button">
+      Dropdown
+    </div>
+
+    <input type="checkbox" class="dd-input" id="test">
+
+    <ul class="dd-menu">
+      <li>Html/Css</li>
+      <li>Javascript</li>
+      <li>Php</li>
+
+    </ul>
+
+  </label>
+
 
 <div class="wrapper">
 
-  <div class="one">
+
+  <div class="one" id="projet">
     <p class="titreprojet">Mon CV</p>
     <img src="Assets/Img/php.png" alt="projet mon cv" >
     <p class="descriptif">
@@ -109,6 +129,7 @@
 </div>
   </div>
 </div>
+</div>
 
 <section class="presentation" id="me">
     <img class="girl" src="Assets/Img/girl.webp" alt="anime girl" >
@@ -116,6 +137,7 @@
     <h1 class="titrefooter">Qui suis-je?</h1> </br> <p>Je m'appelle Wendy et je suis actuellement
     en formation de Web developpeur chez Simplon. Je suis passionnée par les jeux vidéos,
   le maquillage ainsi que les tatouages.</p>
+  <button class="big-button"><a href="Documents/cv.pdf" download="Mon CV">Push me</a></button>
     </div>
 </section>
 
@@ -123,11 +145,28 @@
 <h1 class="titrefooter">Contactez moi</h1>
 <div class="contact">
   <div class="reseaux">
-    <h2>Mon email</h2>
+    <h2 >Mon email</h2>
+  <a href="Vanbelle.wendy95@gmail.com">
+    <img  src="Assets/Img/PixelArt.png" alt="email" width="175" height="175">
+  </a>
+
+
   </div>
 
   <div class="email">
-    <h2>Mes réseaux sociaux</h2>
+    <h2 >Mes réseaux sociaux</h2>
+
+<a href="https://twitter.com/boutchu">
+      <img  src="Assets/Img/twitter.png" alt="twitter" width="150" height="150">
+</a>
+<a href="https://www.facebook.com/wendy.vanbelle1/">
+      <img  src="Assets/Img/face.png" alt="facebook"  width="125" height="125">
+</a>
+<a href="https://www.instagram.com/lunalya_lutea/?hl=fr">
+      <img  src="Assets/Img/insta.png" alt="instagram" width="150" height="150">
+</a>
+
+
 
   </div>
 </div>
