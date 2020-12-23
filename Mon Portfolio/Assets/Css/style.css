@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@300;400&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
 
 /*background*/
 body {
@@ -27,11 +30,12 @@ body {
 
 /* Menu */
 /* NAVIGATION */
+
 nav {
   width: 100%;
   margin-top: 0;
   background: #fff;
-  box-shadow: 0px 5px 0px #dedede;
+  box-shadow: 0px 10px 15px #68cae3;
 }
 nav ul {
   list-style: none;
@@ -42,7 +46,7 @@ nav ul li {
 }
 nav ul li a {
   display: block;
-  padding: 15px;
+  padding: 10px;
   text-decoration: none;
   color: #aaa;
   font-size: 1.7em;
@@ -142,6 +146,7 @@ nav.fill ul li a:hover:after {
 
 /* Dropdown */
 
+
 .dropdown {
   display: inline-block;
   position: relative;
@@ -154,6 +159,7 @@ nav.fill ul li a:hover:after {
   border-radius: 4px;
   padding: 10px 30px 10px 20px;
   background-color: #ffffff;
+  font-family: 'Quantico';
   cursor: pointer;
   white-space: nowrap;
 }
@@ -190,6 +196,7 @@ nav.fill ul li a:hover:after {
   box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
   background-color: #ffffff;
   list-style-type: none;
+  font-family: 'Quantico';
 }
 
 .dd-input + .dd-menu {
@@ -221,15 +228,15 @@ nav.fill ul li a:hover:after {
 .trie{
   background: linear-gradient(transparent, 10%, white, 95%, transparent);
   padding-top: 10%;
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 25px;
+  grid-column-gap: 40px;
   grid-row-gap: 25px;
 }
 
@@ -264,6 +271,24 @@ img{
 
 
 
+.image img {
+/* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+-webkit-transition: all 1s ease; /* Safari et Chrome */
+-moz-transition: all 1s ease; /* Firefox */
+-ms-transition: all 1s ease; /* Internet Explorer 9 */
+-o-transition: all 1s ease; /* Opera */
+transition: all 1s ease;
+}
+.image:hover img {
+/* L'image est grossie de 25% */
+-webkit-transform:scale(1.10); /* Safari et Chrome */
+-moz-transform:scale(1.10); /* Firefox */
+-ms-transform:scale(1.10); /* Internet Explorer 9 */
+-o-transform:scale(1.10); /* Opera */
+transform:scale(1.10);
+}
+
+
 /*fin projet*/
 
 .separation{
@@ -273,6 +298,104 @@ img{
     margin-bottom: 10%;
 }
 /*présentation*/
+
+/*bule neon*/
+
+      .neon ul{
+        margin:0;
+        margin-top: 5%;
+        padding:0;
+        display:flex;
+        justify-content: center;
+        align-content: center;
+
+      }
+    .neon ul li{
+        list-style:none;
+        width:40px;
+        height:40px;
+        background:#fff;
+        border-radius:50%;
+        animation:grow 1.6s ease-in-out infinite;
+      }
+        @keyframes grow
+        {
+          0% , 40% , 100%
+          {
+            transform:scale(0.2);
+          }
+          20%{
+             transform:scale(0.3);
+
+          }
+        }
+
+  .neon  ul li:nth-child(1){
+      animation-delay:-1.4s;
+      background:#fceef5;
+      box-shadow:0 0 50px #fceef5;
+
+    }
+  .neon  ul li:nth-child(2){
+      animation-delay:-1.2s;
+      background:#f3bad6;
+      box-shadow:0 0 50px #f3bad6;
+
+    }
+  .neon  ul li:nth-child(3){
+      animation-delay:-1s;
+      background:#ea86b6;
+      box-shadow:0 0 50px #ea86b6;
+
+    }
+  .neon  ul li:nth-child(4){
+      animation-delay:-0.8s;
+    background:#e05297;
+      box-shadow:0 0 50px #e05297;
+
+    }
+  .neon  ul li:nth-child(5){
+      animation-delay:-0.6s;
+      background:#ea86b6;
+      box-shadow:0 0 50px #ea86b6;
+
+    }
+  .neon  ul li:nth-child(6){
+      animation-delay:-0.4s;
+      background:#f3bad6;
+      box-shadow:0 0 50px #f3bad6;
+
+    }
+  .neon  ul li:nth-child(7){
+      animation-delay:-0.2s;
+      background:#fceef5;
+      box-shadow:0 0 50px #fceef5;
+
+    }
+/*fin bulle neon*/
+
+.glowstick{
+  width: 45%;
+  height: 2px;
+  margin-bottom: 10%;
+  background: #a7c5eb;
+  box-shadow: 0px 0px 0 #46b3e6,
+    0px 0px 4px #46b3e6,
+    0px 0px 8px #41d9d6,
+    0px 0px 16px #88f2f0;
+  border-radius: 50px;
+}
+
+.foot {
+
+  height: 2px;
+  background: #a7c5eb;
+  box-shadow: 0px 0px 0 #46b3e6,
+    0px 0px 4px #46b3e6,
+    0px 0px 8px #41d9d6,
+    0px 0px 16px #88f2f0;
+  border-radius: 50px;
+}
 .presentation{
   display: flex;
   justify-content: space-around;
@@ -334,7 +457,7 @@ button a{
 
     button {
       width: 20%;
-      margin:auto;
+      margin:3%;
       position: relative;
       display: inline-block;
       cursor: pointer;
@@ -421,6 +544,10 @@ footer{
   letter-spacing: 2px;
 }
 
+h2 a{
+  color: black;
+}
+
 .pixel{
   margin-top: 4%;
 
@@ -433,29 +560,45 @@ footer{
 
 /* fin contact */
 
+
+
+
+
+
+
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 785px) {
   /* Menu */
 
+
   nav {
-    overflow: hidden;
-    background-color: #11ffee00;
+    width: 100%;
+    margin-top: 0;
+    background: #fff;
+    box-shadow: 0px 5px 0px #dedede;
   }
-
-  .navbar a {
-    float: right;
-    font-size: 0.6em;
-    color: Black;
-    text-align: center;
-    margin-right: 20px;
-    padding: 14px 16px;
+  nav img{
+    display: none;
+  }
+  nav ul {
+    list-style: none;
+    text-align: right;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px;
     text-decoration: none;
+    color: #aaa;
+    font-size: 0.6em;
+    font-family: 'Press Start 2P';
+    text-transform: uppercase;
+    margin: 10px;
   }
 
-  .navbar a:hover {
-    background-color: Gray;
-  }
 
   /* Fin menu */
 
@@ -493,7 +636,7 @@ grid-row-gap: 5px;
 .six { grid-area: 6 / 1 / 7 / 2; }
 
   .titreprojet{
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: center;
     font-weight: bold;
   }
@@ -516,6 +659,7 @@ grid-row-gap: 5px;
   display: none;
   }
 
+
   /*fin projet*/
 
   .separation{
@@ -528,7 +672,42 @@ grid-row-gap: 5px;
   }
   /*présentation*/
 
+#talkbubble{
+  width: auto;
+  margin:1%;
+  padding-bottom: 5%;
+  border: none;
+}
 
+#talkbubble:before {
+      display: none;
+    }
+
+button {
+  width: 20%;
+  margin:2%;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 0.7rem;
+    color:var(--colorShadeA);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Press Start 2P";
+}
+
+button.big-button {
+   padding: 10px 5px;
+   border: 2px solid var(--colorShadeA);
+  border-radius: 1em;
+  background: var(--colorShadeE);
+  transform-style: preserve-3d;
+   transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
 
     /*fin présentation */
 
@@ -550,5 +729,13 @@ grid-row-gap: 5px;
       flex-direction: column;
     }
 
+    image img {
+    /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+    transform: none;
+    }
+    .image:hover img {
+    /* L'image est grossie de 25% */
+    transform: none;
+    }
 
 }
