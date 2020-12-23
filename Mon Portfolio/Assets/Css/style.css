@@ -144,85 +144,77 @@ nav.fill ul li a:hover:after {
 
 /* Projet */
 
-/* Dropdown */
+/*menu catégorie*/
+.categorie {
+	margin: auto ;
 
-
-.dropdown {
-  display: inline-block;
-  position: relative;
-  margin-left: 20px;
+	position: relative;
+	width: 430px;
+	height: 50px;
+	background-color: white;
+	border-radius: 8px;
+	font-size: 0;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+.categorie a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: black;
+  font-family: "Quantico";
+	cursor: pointer;
+}
+.categorie .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+.categorie a:nth-child(1) {
+	width: 100px;
+}
+.categorie a:nth-child(2) {
+	width: 110px;
+}
+.categorie a:nth-child(3) {
+	width: 120px;
+}
+.categorie a:nth-child(4) {
+	width: 100px;
 }
 
-.dd-button {
-  display: inline-block;
-  border: 1px solid gray;
-  border-radius: 4px;
-  padding: 10px 30px 10px 20px;
-  background-color: #ffffff;
-  font-family: 'Quantico';
-  cursor: pointer;
-  white-space: nowrap;
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #1abc9c;
 }
-
-.dd-button:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid black;
+nav .start-about, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color: #ff80c6;
 }
-
-.dd-button:hover {
-  background-color: #eeeeee;
+nav .start-blog, a:nth-child(3):hover~.animation {
+	width: 120px;
+	left: 210px;
+	background-color: #3498db;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+	width: 100px;
+	left: 330px;
+	background-color: #9b59b6;
 }
 
 
-.dd-input {
-  display: none;
-}
-
-.dd-menu {
-  position: absolute;
-  top: 100%;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 0;
-  margin: 2px 0 0 0;
-  box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
-  background-color: #ffffff;
-  list-style-type: none;
-  font-family: 'Quantico';
-}
-
-.dd-input + .dd-menu {
-  display: none;
-}
-
-.dd-input:checked + .dd-menu {
-  display: block;
-}
-
-.dd-menu li {
-  padding: 10px 20px;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.dd-menu li:hover {
-  background-color: #f6f6f6;
-}
-
-.dd-menu li a {
-  display: block;
-  margin: -10px -20px;
-  padding: 10px 20px;
-}
-
+/*fin menu catégorie*/
 
 
 .trie{
