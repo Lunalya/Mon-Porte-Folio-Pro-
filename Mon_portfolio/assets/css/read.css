@@ -1,0 +1,47 @@
+body{
+    background: url(../img/fond/sausage.png);
+    background-size: cover;
+}
+
+.container{
+    width: 50%;
+    margin-top: 50px;
+    color: white;
+}
+
+h1{
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.mes_btn{
+    margin-top: 50px;
+}
+
+.gras{
+    font-weight: 600;
+    font-size: 18px;
+    
+}
+
+@media (max-width: 1367px) {
+
+    body{
+        background-size: auto;
+    }
+
+
+}
+
+
+@media (max-width: 767px) {
+
+    body{
+        background-size: auto;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+}
